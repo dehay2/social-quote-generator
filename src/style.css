@@ -1,1 +1,52 @@
+body {
+  background-color: #c4dcf2;
+}
 
+a {
+  color: #885df1;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+  background-color: #dce8f2;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  padding: 30px;
+}
+
+.topic {
+  padding: 12px;
+  width: 65%;
+  margin-left: 30px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  border-radius: 15px;
+}
+
+.submit-button {
+  margin-left: 6px;
+  background-color: #272044;
+  color: #fff;
+  border-radius: 15px;
+  width: 90px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.quote {
+  font-size: 18px;
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
