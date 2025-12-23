@@ -19,7 +19,7 @@ h1 {
 }
 
 form {
-  padding: 30px;
+  padding: 12px;
 }
 
 .topic {
@@ -44,6 +44,12 @@ form {
   font-size: 18px;
   padding: 50px;
   text-align: center;
+}
+
+.hint {
+  margin-left: 75px;
+  font-size: 13px;
+  opacity: 0.6;
 }
 
 footer {

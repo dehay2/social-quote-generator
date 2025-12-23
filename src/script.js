@@ -3,6 +3,7 @@ function displayQuote(response) {
     strings: response.data.answer,
     autoStart: true,
     delay: 40,
+    cursor: null,
   });
 }
 
@@ -16,8 +17,9 @@ function generateQuote(event) {
   let prompt = `User instructions: generate a quote about ${topicInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `Generating a ${topicInput.value} quote...please wait`;
 
   axios.get(apiURL).then(displayQuote);
 }
